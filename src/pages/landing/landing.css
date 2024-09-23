@@ -172,7 +172,7 @@ img {
   /* position: relative; */
 }
 .cont-tecnologias::before,
-.cont-tecnologias::after{
+.cont-tecnologias::after {
   position: absolute;
   top: 0;
   width: 250px;
@@ -180,23 +180,21 @@ img {
   content: "";
   z-index: 2;
 }
-.cont-tecnologias::before{
+.cont-tecnologias::before {
   left: 0;
   background: linear-gradient(to left, rgba(255, 255, 255, 0), #191919);
-
 }
-.cont-tecnologias::after{
+.cont-tecnologias::after {
   right: 0;
   background: linear-gradient(to right, rgba(255, 255, 255, 0), #191919);
-
 }
-.seccion3:hover .cont-sec-tecnologias{
+.seccion3:hover .cont-sec-tecnologias2 {
   animation-play-state: paused;
   cursor: pointer;
 }
-.imagen-tecnologias2{
+/* .imagen-tecnologias2{
   width: 300px;
-}
+} */
 .titulo-tecnologias {
   width: 100%;
   height: 160px;
@@ -215,7 +213,6 @@ img {
   justify-content: center !important;
   padding-bottom: 40px;
   background-color: #191919;
- 
 }
 /* .cont-tecnologias{
   display: flex;
@@ -239,15 +236,16 @@ img {
   white-space: nowrap;
   animation: 35s slide infinite linear;
 } */
-.cont-sec-tecnologias, .cont-sec-tecnologias2{
+.cont-sec-tecnologias,
+.cont-sec-tecnologias2 {
   display: flex;
-  white-space:  nowrap;
+  white-space: nowrap;
   animation: 35s slide infinite linear;
   padding: 50px;
-
 }
 
-.cont-sec-tecnologias, .cont-sec-tecnologias2 img{
+.cont-sec-tecnologias,
+.cont-sec-tecnologias2 img {
   /* width: 12%; */
   height: 150px;
   margin: 0 20px;
@@ -271,10 +269,13 @@ img {
 }
 
 .card-hover {
-  width: 18rem;
-  border: 2px solid white;
-  padding: 20px;
+  width: 25rem;
+  height: 330px;
+  /* border: 2px solid white; */
+  /* padding: 20px; */
   border-radius: 20px;
+  position: relative;
+  cursor: pointer;
 }
 .card-hover a {
   color: white;
@@ -284,6 +285,56 @@ img {
   color: white;
   text-decoration: underline;
 }
+
+/* .mainContainer {
+  position: relative;
+  width: 280px;
+  height: 320px;
+} */
+
+.thecard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  /* background: yellow; */
+}
+
+.thecard:hover {
+  transform: rotateY(180deg);
+}
+
+.thefront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #ffc728;
+  color: #333;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.theback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  backface-visibility: hidden;
+  background: #191919;
+  color: #fff;
+  position: absolute;
+
+  transform: rotateY(180deg);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 19px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
 /* -----------seccion 5 --------------- */
 .seccion5 {
   width: 100%;
@@ -451,14 +502,14 @@ img {
 } */
 
 /* @media(max-width:1500px){ */
-  @keyframes slide{
-    from{
-      transform: translateX(0);
-    }
-    to{
-      transform: translateX(-100%)
-    }
+@keyframes slide {
+  from {
+    transform: translateX(0);
   }
+  to {
+    transform: translateX(-100%);
+  }
+}
 /* } */
 @media (max-width: 1200px) {
   .seccion2 {
@@ -500,27 +551,24 @@ img {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    white-space:  nowrap;
+    white-space: nowrap;
     animation: none;
     padding: 50px;
 
     justify-content: space-evenly;
   }
- 
-  .cont-sec-tecnologias2{
-    display: none;
 
+  .cont-sec-tecnologias2 {
+    display: none;
   }
 
-  .cont-tecnologias::before{
+  .cont-tecnologias::before {
     left: 0;
     background: none;
-  
   }
-  .cont-tecnologias::after{
+  .cont-tecnologias::after {
     right: 0;
     background: none;
-  
   }
 
   .contenedor-titulos-andres {
@@ -556,17 +604,22 @@ img {
     height: 100%;
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
     color: white;
     padding: 25px;
   }
   .card-hover {
     width: 100%;
-    border: 2px solid white;
-    padding: 20px;
+    /* border: 2px solid white; */
+    /* padding: 20px; */
     border-radius: 20px;
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
   }
+
   /* ----------seccion 5---------- */
   .seccion5 {
     width: 100%;
@@ -734,10 +787,14 @@ img {
     }
     .card-hover {
       width: 100%;
-      border: 2px solid white;
-      padding: 20px;
+      /* border: 2px solid white; */
+      /* padding: 20px; */
       border-radius: 20px;
       margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
     }
     /* ----------seccion 5---------- */
     .seccion5 {
@@ -823,7 +880,6 @@ img {
     }
   }
 }
-
 
 /* --------------------- */
 /* .cont-img-10Porciento {
