@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-function App() {
+import ReactDOM from "react-dom";
+import store from "./imports/app/store";
+import Landing from "./pages/landing/landing";
+// import Habiliades from "./pages/skills/habiliades"
+
+import { Provider } from "react-redux";
+
+// import App from "./App";
+
+const App = (props) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<Landing />} />
+          {/* <Route exact path="/password" element={<Habiliades />} /> */}
+        </Routes>
+        <ToastContainer position="top-right" theme="dark" />
+      </BrowserRouter>
+    </Provider>
   );
-}
+};
 
 export default App;

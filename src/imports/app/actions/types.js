@@ -1,0 +1,3 @@
+export const AUTH_ERROR = "AUTH_ERROR";
+export const LOADING_PASSWORD = "LOADING_PASSWORD";
+export const LOADING_AUTH = "LOADING_AUTH";

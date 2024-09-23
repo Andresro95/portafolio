@@ -1,0 +1,831 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contenedorPadre {
+  width: 100%;
+}
+
+.seccion1 {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  display: flex;
+}
+
+.nav-bar-fijo {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.cont-secundario {
+  width: 100%;
+  height: 75px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.logo {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+}
+.navBar {
+  width: 55%;
+  height: 50px;
+  display: flex;
+  justify-content: center !important;
+  /* background: red; */
+}
+.navBar a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  display: inline-block;
+  margin: 40px 20px;
+  text-decoration: none;
+  position: relative;
+}
+.contenedor-hofepr {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navLinks {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  filter: drop-shadow(2px 2px 10px white);
+}
+.navLinks:hover {
+  color: white;
+  border-bottom: 3.3px solid white;
+
+  text-decoration: 2px solid overline;
+}
+
+.cont-secundario > .log01 {
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* ---------seccion2--------------- */
+
+.seccion2 {
+  width: 100%;
+  height: 700px;
+  background-color: black;
+
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  position: relative;
+}
+
+.cont-quien-soy1 {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-info h1 {
+  font-family: Handjet;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0px 0px 40px white;
+}
+
+.contenedor-info {
+  width: 80%;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Roboto Mono;
+  font-weight: bold;
+  color: #fff;
+}
+.contendor-princ-cv {
+  width: 35%;
+  height: 80px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.cont-quien-soy2 {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagen-jose {
+  width: 55%;
+  display: flex;
+  object-fit: contain;
+}
+.btn-cv {
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
+  font-family: Roboto Mono;
+  font-size: 20px;
+  border-radius: 25px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  filter: drop-shadow(2px 2px 10px white);
+}
+img {
+  filter: drop-shadow(2px 2px 20px white);
+}
+
+/* ----------seccion 3 ----------------- */
+.seccion3 {
+  width: 100%;
+  height: auto;
+  background: #191919;
+  filter: drop-shadow(2px 2px 10px white);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap;
+  /* position: relative; */
+}
+.cont-tecnologias::before,
+.cont-tecnologias::after{
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+.cont-tecnologias::before{
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #191919);
+
+}
+.cont-tecnologias::after{
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #191919);
+
+}
+.seccion3:hover .cont-sec-tecnologias, .cont-sec-tecnologias2{
+  animation-play-state: paused;
+  cursor: pointer;
+}
+.titulo-tecnologias {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  filter: drop-shadow(2px 2px 10px white);
+}
+
+.cont-tecnologias {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center !important;
+  padding-bottom: 40px;
+  background-color: #191919;
+ 
+}
+/* .cont-tecnologias{
+  display: flex;
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+} */
+
+/* .cont-sec-tecnologias {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: red;
+  white-space: nowrap;
+  animation: 35s slide infinite linear;
+} */
+.cont-sec-tecnologias, .cont-sec-tecnologias2{
+  display: flex;
+  white-space:  nowrap;
+  animation: 35s slide infinite linear;
+  padding: 50px;
+
+}
+
+.cont-sec-tecnologias, .cont-sec-tecnologias2 img{
+  /* width: 12%; */
+  height: 150px;
+  margin: 0 20px;
+}
+
+/* ----------seccion4------------- */
+.seccion4 {
+  width: 100%;
+  height: 650px;
+  background: #000;
+  filter: drop-shadow(2px 2px 10px white);
+}
+.cont-cards-proyectos {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  padding: 25px;
+}
+
+.card-hover {
+  width: 18rem;
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 20px;
+}
+.card-hover a {
+  color: white;
+  text-decoration: none;
+}
+.card-hover a:hover {
+  color: white;
+  text-decoration: underline;
+}
+/* -----------seccion 5 --------------- */
+.seccion5 {
+  width: 100%;
+  height: 600px;
+  background: #191919;
+  filter: drop-shadow(2px 2px 10px white);
+}
+.cont-Contacto {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.cont-secundario-inputs {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+}
+.cont-borde-contacto {
+  width: 50%;
+  height: 300px;
+  border-radius: 15px;
+  opacity: 0.7;
+
+  display: flex;
+  justify-content: center;
+}
+.cont-info {
+  width: 47%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 4%;
+}
+.cont-info span {
+  font-weight: bold;
+}
+
+.cont-inputs-contacto {
+  width: 50%;
+  height: auto;
+  background: black;
+  display: flex;
+  justify-content: center !important;
+  flex-direction: column;
+}
+
+.input-contacto-landing {
+  width: 80%;
+  height: 40px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+.opcaida-input-correo {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.opacida-mensaje-correo {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding-bottom: 20px;
+}
+.opcaida-input-correo input,
+.opacida-mensaje-correo textarea {
+  opacity: 1;
+  border: 2px solid #fff;
+  color: #000;
+}
+.input-mensaje-landing02 {
+  width: 80%;
+  height: 80px;
+  border-radius: 25px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000;
+}
+.botonSignUp {
+  width: 160px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  color: #000;
+  cursor: pointer;
+  font-family: Roboto Mono;
+  font-weight: bold;
+  font-size: 15px;
+}
+.hoverBotones:hover {
+  border: 2px solid white;
+  padding: 4px;
+  border-radius: 25px;
+}
+
+/* --- boton para subir y bajar */
+.scroll-button-container {
+  position: fixed;
+  bottom: 20px;
+  z-index: 2;
+  right: 20px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.scroll-button-container.visible {
+  opacity: 1;
+}
+.scroll-button {
+  background-color: black;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10%;
+  cursor: pointer;
+}
+/* -------------footer-------------- */
+
+.seccion6 {
+  width: 100%;
+  height: 90px;
+  background: black;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(2px 2px 10px white);
+}
+
+/*-----------  responsivo ------------ */
+/* .imagen-tecnologias {
+  width: 10%;
+  display: flex;
+  object-fit: cover;
+  padding: 7px;
+}
+.imagen-tecnologias1 {
+  width: 10%;
+  display: flex;
+  object-fit: cover;
+  padding: 7px;
+}
+.imagen-tecnologias2 {
+  width: 10%;
+  display: flex;
+  object-fit: cover;
+  padding: 7px;
+} */
+
+/* @media(max-width:1500px){ */
+  @keyframes slide{
+    from{
+      transform: translateX(0);
+    }
+    to{
+      transform: translateX(-100%)
+    }
+  }
+/* } */
+@media (max-width: 1200px) {
+  .seccion2 {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+  }
+  .cont-quien-soy1 {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor-info {
+    width: 80%;
+    height: 550px;
+    padding: 60px;
+    /* display: flex;
+    flex-wrap: wrap; */
+  }
+  .cont-tecnologias {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center !important;
+    padding-bottom: 40px;
+    flex-direction: column;
+    /* background: yellow; */
+  }
+  .cont-sec-tecnologias {
+    width: 100%;
+    height: 100%;
+
+    /* padding: 20px; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    white-space:  nowrap;
+    animation: none;
+    padding: 50px;
+
+    justify-content: space-evenly;
+  }
+ 
+  .cont-sec-tecnologias2{
+    display: none;
+
+  }
+
+  .cont-tecnologias::before{
+    left: 0;
+    background: none;
+  
+  }
+  .cont-tecnologias::after{
+    right: 0;
+    background: none;
+  
+  }
+
+  .contenedor-titulos-andres {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedor-info > h1 {
+    font-size: 50px;
+  }
+  .cont-quien-soy2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagen-jose {
+    width: 30%;
+    display: flex;
+    object-fit: contain;
+  }
+
+  /* ------------ seccion 4 -------------- */
+  .seccion4 {
+    width: 100%;
+    height: 100%;
+    background: #000;
+  }
+  .cont-cards-proyectos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+    padding: 25px;
+  }
+  .card-hover {
+    width: 100%;
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+  }
+  /* ----------seccion 5---------- */
+  .seccion5 {
+    width: 100%;
+    height: 500px;
+    background: #191919;
+  }
+  .cont-borde-contacto {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    opacity: 0.7;
+
+    display: flex;
+    justify-content: center;
+  }
+  .cont-info {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+  }
+  .cont-inputs-contacto {
+    width: 88%;
+    height: auto;
+    background: black;
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column;
+  }
+
+  /* .-------movil----- */
+  .logo {
+    display: none;
+  }
+  .navBar {
+    /* background: red; */
+    width: 100%;
+    height: 100px;
+  }
+  .cont-secundario {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  .imagen-tecnologias {
+    width: 12%;
+    display: flex;
+    object-fit: cover;
+  }
+  .imagen-tecnologias1 {
+    width: 15%;
+    display: flex;
+    object-fit: cover;
+    margin-top: 40px;
+  }
+  .imagen-tecnologias2 {
+    width: 15%;
+    display: flex;
+    object-fit: cover;
+    margin-top: 40px;
+  }
+  /* .imagen-tecnologias3 {
+    width: 20%;
+    display: flex;
+    object-fit: cover;
+    margin-top: 30px;
+  } */
+  /* ------------------- */
+  @media (max-width: 480px) {
+    .seccion2 {
+      width: 100%;
+      height: 100%;
+      background-color: black;
+
+      display: flex;
+      flex-direction: column;
+    }
+    .cont-quien-soy1 {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .contenedor-info {
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .contenedor-titulos-andres {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .contenedor-info > h1 {
+      font-size: 50px;
+    }
+    .contendor-princ-cv {
+      width: 100%;
+      height: 80px;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+    .cont-quien-soy2 {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .imagen-jose {
+      width: 60%;
+      display: flex;
+      object-fit: contain;
+    }
+    /* ---------seccion 3 --------------- */
+    .seccion3 {
+      width: 100%;
+      height: auto;
+      background: #191919;
+    }
+    .cont-tecnologias {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center !important;
+      padding-bottom: 40px;
+      /* flex-direction: column; */
+    }
+    .cont-sec-tecnologias {
+      width: 100%;
+      height: 100%;
+
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    /* ------------ seccion 4 -------------- */
+    .seccion4 {
+      width: 100%;
+      height: 100%;
+      background: #000;
+    }
+    .cont-cards-proyectos {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      color: white;
+      padding: 25px;
+    }
+    .card-hover {
+      width: 100%;
+      border: 2px solid white;
+      padding: 20px;
+      border-radius: 20px;
+      margin-bottom: 40px;
+    }
+    /* ----------seccion 5---------- */
+    .seccion5 {
+      width: 100%;
+      height: 600px;
+      background: #191919;
+    }
+    .cont-secundario-inputs {
+      width: 100%;
+      height: 100%;
+
+      display: flex;
+      justify-content: center;
+    }
+    .cont-borde-contacto {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      opacity: 0.7;
+
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .titulo-tecnologias {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      filter: drop-shadow(2px 2px 10px white);
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .cont-info {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 4%;
+    }
+
+    .cont-inputs-contacto {
+      width: 100%;
+      height: auto;
+      background: black;
+      display: flex;
+      justify-content: center !important;
+      flex-direction: column;
+      padding: 20px;
+    }
+    .navBar {
+      /* background: blue; */
+      width: 100%;
+      height: 200px;
+    }
+    .contenedor-hofepr {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      /* justify-content: space-evenly; */
+      flex-wrap: wrap;
+      align-items: center;
+      /* background-color: grey; */
+    }
+    .imagen-tecnologias {
+      width: 40%;
+      display: flex;
+      object-fit: cover;
+      padding: 7px;
+    }
+    .imagen-tecnologias1 {
+      width: 45%;
+      display: flex;
+      object-fit: cover;
+      padding: 7px;
+    }
+    .imagen-tecnologias2 {
+      width: 50%;
+      display: flex;
+      object-fit: cover;
+      padding: 7px;
+    }
+  }
+}
+
+
+/* --------------------- */
+/* .cont-img-10Porciento {
+  width: 10%;
+}
+.cont-img-8Porciento {
+  width: 10%;
+} */
