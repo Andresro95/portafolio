@@ -7,7 +7,7 @@ import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
 
 import $ from "jquery";
-import { Navbar, Container } from "react-bootstrap";
+import {  Container } from "react-bootstrap";
 // import { NavLink, Link } from "react-router-dom";
 import ContactoLanding from "./contacto";
 import Proyectos from "./proyectos";
@@ -200,7 +200,7 @@ const Landing = () => {
 
               {/* <div className="cont-img-10Porciento"> */}
               <img
-                className="imagen-tecnologias2"
+                // className="imagen-tecnologias2"
                 // style={{ width: "100%", display: "flex", objectFit: "cover" }}
                 src="/images/bootstrap.png"
               ></img>
@@ -219,7 +219,9 @@ const Landing = () => {
               ></img>
               {/* </div> */}
               {/* <div className="cont-img-10Porciento"> */}
-              <img className="imagen-tecnologias2" src="/images/node.png"></img>
+              <img 
+              // className="imagen-tecnologias2" 
+              src="/images/node.png"></img>
               {/* </div> */}
               {/* <div className="cont-img-10Porciento"> */}
               <img className="imagen-tecnologias" src="/images/git.png"></img>
@@ -263,7 +265,7 @@ const Landing = () => {
 
               {/* <div className="cont-img-10Porciento"> */}
               <img
-                className="imagen-tecnologias2"
+                // className="imagen-tecnologias2"
                 // style={{ width: "100%", display: "flex", objectFit: "cover" }}
                 src="/images/bootstrap.png"
               ></img>
@@ -282,7 +284,9 @@ const Landing = () => {
               ></img>
               {/* </div> */}
               {/* <div className="cont-img-10Porciento"> */}
-              <img className="imagen-tecnologias2" src="/images/node.png"></img>
+              <img 
+              // className="imagen-tecnologias2" 
+              src="/images/node.png"></img>
               {/* </div> */}
               {/* <div className="cont-img-10Porciento"> */}
               <img className="imagen-tecnologias" src="/images/git.png"></img>
@@ -326,7 +330,7 @@ const Landing = () => {
 
               {/* <div className="cont-img-10Porciento"> */}
               <img
-                className="imagen-tecnologias2"
+                // className="imagen-tecnologias2"
                 // style={{ width: "100%", display: "flex", objectFit: "cover" }}
                 src="/images/bootstrap.png"
               ></img>
@@ -345,7 +349,9 @@ const Landing = () => {
               ></img>
               {/* </div> */}
               {/* <div className="cont-img-10Porciento"> */}
-              <img className="imagen-tecnologias2" src="/images/node.png"></img>
+              <img 
+              // className="imagen-tecnologias2" 
+              src="/images/node.png"></img>
               {/* </div> */}
               {/* <div className="cont-img-10Porciento"> */}
               <img className="imagen-tecnologias" src="/images/git.png"></img>

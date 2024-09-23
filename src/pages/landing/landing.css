@@ -190,9 +190,12 @@ img {
   background: linear-gradient(to right, rgba(255, 255, 255, 0), #191919);
 
 }
-.seccion3:hover .cont-sec-tecnologias, .cont-sec-tecnologias2{
+.seccion3:hover .cont-sec-tecnologias{
   animation-play-state: paused;
   cursor: pointer;
+}
+.imagen-tecnologias2{
+  width: 300px;
 }
 .titulo-tecnologias {
   width: 100%;
