@@ -7,7 +7,7 @@ import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
 
 import $ from "jquery";
-import {  Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 // import { NavLink, Link } from "react-router-dom";
 import ContactoLanding from "./contacto";
 import Proyectos from "./proyectos";
@@ -20,8 +20,6 @@ import "./landing.css";
 const Landing = () => {
   // var copy = document.querySelector(".cont-sec-tecnologias").cloneNode(true)
   // document.querySelector(".cont-tecnologias").appendChild(copy)
-
-
 
   // efecto menu.
   $(document).ready(function () {
@@ -67,7 +65,8 @@ const Landing = () => {
     link.click();
     document.body.removeChild(link);
   };
-
+  // const copy = document.querySelector(".cont-sec-tecnologias").cloneNode(true);
+  // document.querySelector(".cont-tecnologias").appendChild(copy);
 
   return (
     <div className="contenedorPadre">
@@ -219,9 +218,7 @@ const Landing = () => {
               ></img>
               {/* </div> */}
               {/* <div className="cont-img-10Porciento"> */}
-              <img 
-              className="imagen-tecnologias2" 
-              src="/images/node.png"></img>
+              <img className="imagen-tecnologias2" src="/images/node.png"></img>
               {/* </div> */}
               {/* <div className="cont-img-10Porciento"> */}
               <img className="imagen-tecnologias" src="/images/git.png"></img>
@@ -284,9 +281,10 @@ const Landing = () => {
               ></img>
               {/* </div> */}
               {/* <div className="cont-img-10Porciento"> */}
-              <img 
-              // className="imagen-tecnologias2" 
-              src="/images/node.png"></img>
+              <img
+                // className="imagen-tecnologias2"
+                src="/images/node.png"
+              ></img>
               {/* </div> */}
               {/* <div className="cont-img-10Porciento"> */}
               <img className="imagen-tecnologias" src="/images/git.png"></img>
@@ -349,9 +347,10 @@ const Landing = () => {
               ></img>
               {/* </div> */}
               {/* <div className="cont-img-10Porciento"> */}
-              <img 
-              // className="imagen-tecnologias2" 
-              src="/images/node.png"></img>
+              <img
+                // className="imagen-tecnologias2"
+                src="/images/node.png"
+              ></img>
               {/* </div> */}
               {/* <div className="cont-img-10Porciento"> */}
               <img className="imagen-tecnologias" src="/images/git.png"></img>
@@ -363,8 +362,7 @@ const Landing = () => {
               ></img>
               {/* </div> */}
             </div>
-            
-            
+
             {/* <div className="cont-sec-tecnologias">
               <div style={{ width: "12%" }}>
                 <img
@@ -418,9 +416,7 @@ const Landing = () => {
           </footer>
         </section>
       </div>
-     
     </div>
-    
   );
 };
 

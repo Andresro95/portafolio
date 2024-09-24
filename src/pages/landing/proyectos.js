@@ -25,6 +25,8 @@ function Proyectos() {
               src="/images/4.jpg"
             />
           </div>
+          <div className="texto-encima">CAFETERIA</div>
+
           <div className="theback">
             <Card.Body>
               <Card.Title>CAFETERIA</Card.Title>
@@ -39,7 +41,8 @@ function Proyectos() {
                 }}
               >
                 Esto es una pagina web de una cafeteria 100% Yucateca, es un
-                menu de todos los platillos que venden.
+                menu con todos los servicios que ofrecen y es adaptable a
+                cualquier dispoispovo inteligente.
               </Card.Text>
 
               <a
@@ -74,6 +77,8 @@ function Proyectos() {
               src="/images/4.1.jpg"
             />
           </div>
+          <div className="texto-encima">Startup</div>
+
           <div className="theback">
             <Card.Body>
               <Card.Title>Startup</Card.Title>
@@ -82,13 +87,14 @@ function Proyectos() {
                   color: "white",
                   paddingTop: "15px",
                   display: "flex",
+                  padding: "20px",
                   justifyContent: "center",
                   alignItems: "center",
                   textAlign: "center",
                 }}
               >
-                Esto es una pagina web de una cafeteria 100% Yucateca, es un
-                menu de todos los platillos que venden.
+                Esto es un sitio web practico, sencillo y responsivo, que hice
+                en un proyecto final.
               </Card.Text>
 
               <a
@@ -123,6 +129,8 @@ function Proyectos() {
               src="/images/hero.jpg"
             />
           </div>
+          <div className="texto-encima">Carrito de cursos en linea.</div>
+
           <div className="theback">
             <Card.Body>
               <Card.Title>Carrito de cursos en linea.</Card.Title>
@@ -137,8 +145,8 @@ function Proyectos() {
                   display: "flex",
                 }}
               >
-                Esto es una pagina web de una cafeteria 100% Yucateca, es un
-                menu de todos los platillos que venden.
+                Esto es una pagina web de un carrito de cursos en linea que hice
+                para un proyecto final.
               </Card.Text>
 
               <a
