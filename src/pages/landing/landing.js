@@ -79,7 +79,7 @@ const Landing = () => {
                 style={{ textDecoration: "none", color: "white" }}
                 to="/"
               >
-                <h1 style={{ fontWeight: "bold" }}>ANDRES VALENCIA</h1>
+                <h1 style={{ fontWeight: "bold" }}>ANDRES ROVA</h1>
               </NavLink>
             </div>
 
